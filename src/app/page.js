@@ -171,9 +171,15 @@ export default function Home() {
     'Node.js': '/Node.js.png',
     PostgreSQL: '/PostgresSQL.png',
     'GitHub Actions': '/GitHub Actions.png',
+    GitHub: '/GitHub.png',
     Terraform: '/HashiCorp Terraform.png',
     MySQL: '/MySQL.png',
     Git: '/Git.png',
+    Redux: '/Redux.png',
+    Postman: '/Postman.png',
+    Grafana: '/Grafana.png',
+    Prometheus: '/Prometheus.png',
+    Helm: '/Helm.png',
   };
 
   const validateForm = () => {
@@ -248,7 +254,7 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="text-blue-400 font-semibold text-lg animate-fade-in">Welcome to my portfolio</p>
                 <h1 className="text-6xl md:text-7xl font-bold leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
-                  Fresher <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">Full Stack</span> & <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">Cloud</span> Developer
+                  Fresher <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">Full Stack Developer</span> & <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">DevOps Engineer</span>
                 </h1>
                 <p className="text-xl text-gray-400 max-w-2xl animate-slide-up" style={{animationDelay: '0.2s'}}>
                   Building modern web applications and learning cloud infrastructure. Passionate about clean code, open source, and continuous learning.
@@ -527,7 +533,7 @@ export default function Home() {
               {
                 title: 'Cloud & DevOps',
                 description: 'Infrastructure and deployment',
-                items: ['Docker', 'Kubernetes', 'AWS', 'GitHub Actions', 'Linux', 'Terraform'],
+                items: ['Docker', 'Kubernetes', 'Helm', 'AWS', 'GitHub Actions', 'Linux', 'Terraform', 'Prometheus', 'Grafana'],
                 gradient: 'from-orange-600 to-red-500',
                 Icon: Cloud
               },
@@ -541,7 +547,7 @@ export default function Home() {
               {
                 title: 'Tools',
                 description: 'Development productivity tools',
-                items: ['Git', 'VS Code', 'Postman'],
+                items: ['Git', 'GitHub', 'VS Code', 'Postman'],
                 gradient: 'from-indigo-600 to-purple-500',
                 Icon: Wrench
               },
