@@ -253,7 +253,7 @@ export default function Home() {
             <div className="space-y-8 animate-slide-left">
               <div className="space-y-4">
                 <p className="text-blue-400 font-semibold text-lg animate-fade-in">Welcome to my portfolio</p>
-                <h1 className="text-6xl md:text-7xl font-bold leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
+                <h1 className=" lg:text-7xl md:text-6xl text-4xl font-bold leading-tight animate-slide-up" style={{animationDelay: '0.1s'}}>
                   Fresher <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">Full Stack Developer</span> & <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-shift">DevOps Engineer</span>
                 </h1>
                 <p className="text-xl text-gray-400 max-w-2xl animate-slide-up" style={{animationDelay: '0.2s'}}>
@@ -261,20 +261,20 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex gap-4 animate-slide-up" style={{animationDelay: '0.3s'}}>
-                <a href="#projects" className="px-8 py-4 bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-blue-500/50 transition transform hover:scale-105 active:scale-95">
+                <a href="#projects" className="px-5 py-4 lg:px-8 lg:text-base sm:text-xs text-base bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg font-semibold hover:shadow-xl hover:shadow-blue-500/50 transition transform hover:scale-105 active:scale-95">
                   View My Work
                 </a>
-                <a href="#contact" className="px-8 py-4 border-2 border-blue-400/50 text-white rounded-lg font-semibold hover:border-blue-400 hover:bg-blue-400/10 transition transform hover:scale-105">
+                <a href="#contact" className="px-8 py-4 lg:text-base sm:text-xs text-base border-2 border-blue-400/50 text-white rounded-lg font-semibold hover:border-blue-400 hover:bg-blue-400/10 transition transform hover:scale-105">
                   Get In Touch
                 </a>
               </div>
               <div className="flex gap-6 pt-4 animate-slide-up" style={{animationDelay: '0.4s'}}>
                 {[
-                  { Icon: Instagram, href: '' },
+                  { Icon: Instagram, href: 'https://www.instagram.com/iamsnyg/' },
                   { Icon: Linkedin, href: 'https://www.linkedin.com/in/sunny-gupta-5691ab249/' },
-                  { Icon: Github, href: '#' }
-                ].map(({ Icon }, idx) => (
-                  <a key={idx} href="#" className="text-gray-400 hover:text-blue-400 transition transform hover:scale-125 hover:-translate-y-1">
+                  { Icon: Github, href: 'https://github.com/iamsnyg' }
+                ].map(({ Icon, href }, idx) => (
+                  <a key={idx} href={href} target="_blank" rel="noopener noreferrer"className="text-gray-400 hover:text-blue-400 transition transform hover:scale-125 hover:-translate-y-1">
                     <Icon size={28} />
                   </a>
                 ))}
@@ -655,7 +655,7 @@ export default function Home() {
                   { Icon: Linkedin, label: 'LinkedIn', value: 'www.linkedin.com/in/sunny-gupta-5691ab249', href: "https://www.linkedin.com/in/sunny-gupta-5691ab249/" },
                   { Icon: Github, label: 'GitHub', value: 'iamsnyg', href: 'https://github.com/iamsnyg' },
                   // { Icon: Twitter, label: 'Twitter', value: '@suraj_dev', href: '#' },
-                  { Icon: Instagram, label: 'Instagram', value: '@iamsnyg', href: '#' },
+                  { Icon: Instagram, label: 'Instagram', value: '@iamsnyg', href: 'https://www.instagram.com/iamsnyg/' },
                 ].map((contact, idx) => (
                   <a
                     key={idx}
