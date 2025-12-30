@@ -234,7 +234,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex gap-10 font-medium">
             {['Home', 'About', 'Projects', 'Contact'].map((item, idx) => (
-              <a key={idx} href={`${item.toLowerCase()}`} className="relative group hover:text-blue-400 transition">
+              <a key={idx} href={`#${item.toLowerCase()}`} className="relative group hover:text-blue-400 transition">
                 {item}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-400 to-cyan-400 group-hover:w-full transition-all duration-300"></span>
               </a>
