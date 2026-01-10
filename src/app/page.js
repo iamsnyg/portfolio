@@ -241,7 +241,7 @@ export default function Home() {
             ))}
           </div>
           <button className="px-6 py-2 bg-linear-to-r from-blue-600 to-cyan-600 text-white rounded-lg hover:shadow-lg hover:shadow-blue-500/50 transition transform hover:scale-105">
-            <a href='https://drive.google.com/drive/u/0/folders/1Tr0OpKSOIT4EU70T-0H8mzoU6xqv1w2p' target='_blank' rel='noopener noreferrer'>Resume</a>
+            <a href='https://drive.google.com/file/d/1IEuCfuom5FLjIV1mjlTSzMf6CRq5g4qC/view?usp=sharing' target='_blank' rel='noopener noreferrer'>Resume</a>
           </button>
         </div>
       </nav>
